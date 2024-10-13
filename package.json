@@ -17,5 +17,8 @@
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@paystack/inline-js": "^2.22.0"
   }
 }
