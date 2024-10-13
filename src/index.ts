@@ -24,7 +24,9 @@ class PaystackPop implements PaystackPopInterface {
   private pop: any;
 
   constructor() {
-    this.pop = OriginalPaystackPop;
+    // initialize original PaystackPop
+    const popup = new OriginalPaystackPop();
+    this.pop = popup;
   }
 
   isLoaded(): boolean {
@@ -36,7 +38,7 @@ class PaystackPop implements PaystackPopInterface {
   }
 
   resumeTransaction(options: ResumeTransactionOptions): PopupTransaction {
-    return this.pop.resumeTransaction(options);
+    return this.pop.newTransaction(options);
   }
 
   cancelTransaction(idOrTransaction: string | PopupTransaction): void {
