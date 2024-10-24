@@ -1,5 +1,6 @@
 {
   "name": "paystack-inline-ts",
+  "type": "module",
   "version": "1.0.3",
   "description": "A simple typescript of the existing @paystack/inline-js",
   "main": "dist/index.js",

@@ -26,7 +26,7 @@ npm install paystack-inline-ts
 Here's a basic example of how to use `paystack-inline-ts`:
 
 ```typescript
-import PaystackPop { ResumeTransactionOptions } from 'paystack-inline-ts';
+import PaystackPop, { ResumeTransactionOptions } from 'paystack-inline-ts';
 ```
 
 Then you can follow with how things are done in the official [documentation](https://www.npmjs.com/package/@paystack/inline-js)
