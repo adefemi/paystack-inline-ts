@@ -17,7 +17,7 @@ interface PaystackPopInterface {
 }
 
 export interface PaystackPopConstructor {
-  new (): PaystackPopInterface;
+  new(): PaystackPopInterface;
 }
 
 class PaystackPop implements PaystackPopInterface {
@@ -38,7 +38,7 @@ class PaystackPop implements PaystackPopInterface {
   }
 
   resumeTransaction(options: ResumeTransactionOptions): PopupTransaction {
-    return this.pop.newTransaction(options);
+    return this.pop.resumeTransaction(options);
   }
 
   cancelTransaction(idOrTransaction: string | PopupTransaction): void {
